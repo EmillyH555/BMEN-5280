@@ -4,11 +4,11 @@ import numpy as np
 import mediapipe as mp
 
 # Load the trained model and label encoder
-with open('asl_model.p', 'rb') as f:
+with open('asl_model_v2.p', 'rb') as f:
     model_data = pickle.load(f)
 
 model = model_data['model']
-label_encoder = model_data['label_encoder']
+label_encoder = model_data['label_encoder_v2']
 
 # Initialize MediaPipe Hands model
 mp_hands = mp.solutions.hands
